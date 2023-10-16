@@ -1,0 +1,35 @@
+*{
+    margin: 0px 100px 0px 100px; 
+    padding: 0px;
+}
+
+body {
+    background: lightblue;
+}
+
+.sinal-wifi {
+    background: lightgray;
+    border: 2px solid black;
+    padding: 10px;
+    display: flex;
+} .sinal-wifi{margin-top: 175px; margin-left: 45%;}
+
+.motores {
+    justify-content: center;
+    display: flex;
+    margin-top: 100px;
+}
+
+.motorx {
+    padding: 50px;
+    background: lightgreen;
+    border-radius: 8px;
+    transform: rotate(1.1turn);
+}
+
+.motory {
+    padding: 50px;
+    background: lightgreen;
+    border-radius: 8px;
+    transform: rotate(-0.1turn);
+}
