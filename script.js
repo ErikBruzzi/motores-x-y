@@ -1,41 +1,56 @@
-for(var i = 0; i <= 10; i++){
+for(var i = 0; i <= 10; i++){            
     console.log(i)
 }
 
 
 function fnBotao(){
-    alert('Stoped!');
+  alert("Stoped");
 }
 
+// ================================================================================================================
 
+/*
+var wifiStop = document.querySelector(".motores")
 
+let wifiStop = 0
+
+function fnBotao(){
+    wifiStop = 1
+
+    if (wifiStop > 0) {
+      wifiStop.innerHTML = ("<div></div> <div></div>");
+    }
+}
+*/
+
+// responsáveis por nomear as classes dos objetos a serem orientados 
 var motorx = document.querySelector(".motorx");
 var contentx = document.querySelectorAll(".motores .motorx");
 
-let contadorX= 0;
+let contadorX = 0; // deifine o valor da posicão dos objetos para zero
 
-function motorX() {
+function motorX() { // caucula o quanto cada eixo deve girar por 100 milisegundos 
   contadorX++;
 
-  if (contadorX > contentx.length > 10) {
-    contadorX = 0;
+  if (contadorX > contentx) {
   }
 
   motorx.style.transform = `rotate(${contadorX * 0.1}turn)`;
 }
 
-setInterval(motorX, 100);
+setInterval(motorX, 100); // define o intervalo para que o comando seja executável
+
+// a mesma lógica de comandos para o motor do eixo y
 
 var motory = document.querySelector(".motory");
 var contenty = document.querySelectorAll(".motores .motory");
 
-let contadorY= 0;
+let contadorY = 0;
 
 function motorY() {
-    contadorY++;
+  contadorY++;
 
-  if (contadorY > contenty.length > 10) {
-    contadorY = 0;
+  if (contadorY > contenty) {
   }
 
   motory.style.transform = `rotate(${-contadorY * 0.1}turn)`;

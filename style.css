@@ -7,6 +7,10 @@ body {
     background: lightblue;
 }
 
+p {
+    margin: 100px 150px 0px 150px; 
+}
+
 .sinal-wifi {
     background: lightgray;
     border: 2px solid black;
